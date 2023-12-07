@@ -21,7 +21,7 @@ Route::prefix('admin')->group(function(){
 
     Route::get('/login',[AdminController::class,'Index'])->name('login_form');
     Route::get('/login/owner',[AdminController::class,'Login'])->name('admin.login');
-    Route::get('/dashboard',[AdminController::class,'Index'])->name('admin.dashboar');
+    Route::get('/dashboard',[AdminController::class,'Dashboard'])->name('admin.dashboar');
 });
 
 /*-------------- Admin Route--------------*/
