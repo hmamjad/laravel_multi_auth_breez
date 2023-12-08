@@ -27,7 +27,6 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{ route('login') }}">User</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{ route('login_form') }}">Admin</a>
                 </li>
@@ -47,16 +46,15 @@
 
 
 
-
     <div id="layoutAuthentication">
         <div id="layoutAuthentication_content">
             <main>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-5">
-                            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                            <div class="card shadow-lg border-0 rounded-lg mt-5 bg-warning">
                                 <div class="card-header">
-                                    <h3 class="text-center font-weight-light my-4">Admin Login</h3>
+                                    <h3 class="text-center font-weight-light my-4">Seller Login</h3>
                                 </div>
                                 <div class="card-body">
 
@@ -72,7 +70,7 @@
                                     {{-- alert end --}}
 
 
-                                    <form action="{{ route('admin.login') }}" method="post">
+                                    <form action="{{ route('seller.login') }}" method="post">
                                         @csrf
 
                                         <div class="form-floating mb-3">
@@ -105,7 +103,7 @@
 
                                 </div>
                                 <div class="card-footer text-center py-3">
-                                    <div class="small"><a href="{{ route('admin.register') }}">Need an account? Sign
+                                    <div class="small"><a href="{{ route('seller.register') }}">Need an account? Sign
                                             up!</a></div>
                                 </div>
                             </div>

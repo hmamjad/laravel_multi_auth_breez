@@ -1,6 +1,6 @@
-@extends('admin.admin_master')
+@extends('seller.seller_master')
 
-@section('main-content')
+@section('seller')
 
  {{-- alert start --}}
  @if(Session::has('error'))
@@ -12,8 +12,8 @@
 
    {{-- alert end --}}
 
-   <h4>Login Admin Name : {{ Auth::guard('admin')->user()->name}}</h4>
-   <h4>Login Admin Email : {{ Auth::guard('admin')->user()->email}}</h4>
+   <h4>Login Seller Name : {{ Auth::guard('seller')->user()->name}} </h4>
+   <h4>Login Seller Email : {{ Auth::guard('seller')->user()->email}} </h4>
 
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
